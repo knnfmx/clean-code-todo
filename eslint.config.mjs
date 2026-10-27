@@ -12,7 +12,11 @@ export default [
         ...globals.browser,
       },
     },
-    rules: {},
+    rules: {
+      'no-var': 'error',
+      'prefer-const': 'error',
+      'no-console': 'warn',
+    },
   },
   {
     files: ['app.js'],
